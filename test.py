@@ -18,7 +18,10 @@
 Num=10
 while Num>=0:
     Num=Num-1
-print(Num)
+    print(Num)
+Num()
+
+
 
 # def guessing():
 #     import random
