@@ -15,19 +15,17 @@
 
 # print("Thanks for your order!")
 
-Num=10
-while Num>=0:
-    Num=Num-1
-    print(Num)
-Num()
+colors=""
+while colors != "stop":
+    color=input("tell me your fav colors(type 'stop' when done)")
 
 
 
-# def guessing():
-#     import random
-#     actual=random.randint(1,10)
-#     guess=int(input("Guess a number from 1-10"))
-#     while guess !=actual:
-#         if guess > 10 or guess <1:
 
- 
+def guessing():
+    import random
+    actual=random.randint(1,10)
+    guess=int(input("Guess a number from 1-10"))
+    while guess !=actual:
+        if guess > 10 or guess <1:
+            
