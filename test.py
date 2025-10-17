@@ -15,17 +15,28 @@
 
 # print("Thanks for your order!")
 
-colors=""
-while colors != "stop":
-    color=input("tell me your fav colors(type 'stop' when done)")
+# colors=""
+# while colors != "stop":
+#     color=input("tell me your fav colors(type 'stop' when done)")
 
 
 
 
-def guessing():
-    import random
-    actual=random.randint(1,10)
-    guess=int(input("Guess a number from 1-10"))
-    while guess !=actual:
-        if guess > 10 or guess <1:
-            
+import random
+numbers=[1,2,3,4,5,6,7,8,9,10]
+wrongnums=[]
+wrongnum=random.choice(numbers)
+
+guessnum=int(input("guess num from 1-10"))
+while guessnum != wrongnum:
+    if guessnum > wrongnum:
+        wrongnum.append(wrongnums)
+        print(f"The numbers {wrongnums} are not correct")
+    elif guessnum < wrongnum:
+        wrongnum.append(wrongnums)
+        print("Your number is greater than the random number")
+    elif guessnum >wrongnum:
+        print("Your number is less than the random number")
+        wrongnum.append(wrongnums)
+    elif guessnum ==wrongnum:
+        print("your number is correct")
