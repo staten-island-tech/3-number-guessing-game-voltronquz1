@@ -29,9 +29,10 @@ randomnum=random.choice(numbers)
 
 guessnum=int(input("guess num from 1-10"))
 while guessnum != randomnum:
+    guessnum=int(input("guess num from 1-10: "))
     if guessnum > randomnum:
         wrongnums.append(guessnum)
-        print(f"The number {wrongnums} are not correct")
+        print(f"The number {wrongnums} is not correct")
         print("Your number is less than the random number")
     elif guessnum < randomnum:
         wrongnums.append(guessnum)
